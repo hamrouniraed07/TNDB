@@ -1,0 +1,283 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color : rgb(11,17,59);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.gradient {
+    z-index: -200;
+    background: linear-gradient(180deg, black, grey);
+    opacity: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.container {
+    width: 70%;
+}
+
+.nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 5vh;
+    margin: auto;
+}
+
+button {
+    background-color: rgb(11,17,59);
+    border-radius: 50px;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+}
+.nav button{
+    width: 70px;
+}
+
+.nav a {
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+
+.nav {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    color: white;
+}
+
+.wallpaper {
+    height: 50vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat;
+    margin-bottom: 20vh;
+}
+
+.wallpaper button {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+}
+
+.movie {
+    position: absolute;
+    bottom: -100px;
+    left: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cover {
+    
+    height: 37vh;
+    width: 12vw;
+}
+
+.cover img {
+    width: inherit;
+    height: inherit;
+}
+
+.name {
+    margin-top: 170px;
+    color: white;
+}
+
+.name p {
+    margin: 15px 30px;
+}
+
+
+.details {
+    height: 30vh;
+    margin: 10vh auto;
+    background-color: rgba(0, 0, 0,0.3);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.info {
+    width: 50%;
+    height: 70%;
+    margin: auto 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+
+.summery {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.summery p,h3 {
+    width: 70%;
+    margin: 20px auto;
+}
+
+.rateContiner {
+    
+    color: white;
+    background-color: rgba(0, 0, 0,0.3);
+    height: 40vh;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.crit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: inherit;
+    width: 60%;
+    height: 30vh;
+    margin:auto;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.title button {
+    padding: 5px;
+}
+
+.rating {
+    height: inherit;
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.divider {
+    width: 3px;
+    height: 25vh;
+    background-color: black;
+    margin: auto 0;
+}
+
+.inputField {
+    width: 100%;
+    height: 20vh;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.inputField textarea{
+    width: inherit;
+    height: inherit;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+.critiques {
+    background-color: rgba(0, 0, 0,0.3);
+    color: white;
+    
+    min-height: 30vh;
+    margin: 10vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.review {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 5vh auto;
+    color: white;
+}
+
+.pic {
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url("../image/po.png");
+    width: 70px;
+    height: 70px;
+}
+
+.pic img {
+    width: inherit;
+    height: inherit;
+    border-radius: 50%;
+}
+
+.person {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
