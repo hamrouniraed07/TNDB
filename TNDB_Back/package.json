@@ -1,0 +1,35 @@
+{
+  "name": "webservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/index.js",
+    "db": "E:/mongodb/bin/mongod.exe --dbpath=E:/mongodc-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "4.17.1",
+    "html-to-text": "7.0.0",
+    "http-status-codes": "2.1.4",
+    "joi": "17.4.0",
+    "jsonwebtoken": "8.5.1",
+    "mongodb": "3.6.3",
+    "mongoose": "5.11.15",
+    "multer": "1.4.2",
+    "uuid": "8.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.12.16",
+    "@babel/core": "^7.12.16",
+    "@babel/node": "^7.12.16",
+    "@babel/preset-env": "7.12.16",
+    "nodemon": "2.0.7"
+  }
+}
